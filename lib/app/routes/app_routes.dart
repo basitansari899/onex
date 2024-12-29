@@ -25,6 +25,7 @@ abstract class Routes {
   static const EARNINGS = _Paths.EARNINGS;
   static const MY_PROFILE = _Paths.MY_PROFILE;
   static const PACKAGES_META_DATA = _Paths.PACKAGES_META_DATA;
+  static const LANDING_VIEW = _Paths.LANDING_VIEW;
 }
 
 abstract class _Paths {
@@ -51,4 +52,5 @@ abstract class _Paths {
   static const EARNINGS = '/earnings';
   static const MY_PROFILE = '/my-profile';
   static const PACKAGES_META_DATA = '/packages-meta-data';
+  static const LANDING_VIEW = '/landing-view';
 }

@@ -43,7 +43,9 @@ class CategoryResultView extends GetView<CategoryResultController> {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     mainAxisSpacing: Sizes.p12,
                     crossAxisSpacing: Sizes.p12,
-                    crossAxisCount: 2),
+                    crossAxisCount: 2,
+                    childAspectRatio: 1/1.2
+                    ),
                 itemBuilder: (BuildContext context, int index) {
                   return SearchResultFreelancerCard(
                       avatarRadius: 13,

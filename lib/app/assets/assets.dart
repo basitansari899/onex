@@ -49,4 +49,12 @@ class ImageAsset {
   static const String orders = 'assets/icons/orders.png';
   static const String edit = 'assets/icons/edit.png';
   static const String dropdown = 'assets/icons/dropdown_icon.png';
+
+    // <============ ICONS ==============>
+  static const String icHome = 'assets/svg/home.svg';
+  static const String icCategory = 'assets/svg/category.svg';
+  static const String icProfile = 'assets/svg/profile.svg';
+  static const String icSms = 'assets/svg/sms.svg';
+  static const String icReels = 'assets/svg/document.svg';
+
 }

@@ -112,7 +112,7 @@ class LoginView extends GetView<LoginController> {
                   width: Get.width,
                   textColor: AppColors.white,
                   title: StringConstant.login,
-                  onPress: () => Get.toNamed(Routes.HOME)),
+                  onPress: () => Get.toNamed(Routes.LANDING_VIEW)),
               Row(
                 children: [
                   Expanded(child: Image.asset(ImageAsset.line)),

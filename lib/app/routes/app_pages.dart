@@ -20,6 +20,8 @@ import '../modules/freelancerHome/bindings/freelancer_home_binding.dart';
 import '../modules/freelancerHome/views/freelancer_home_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/landingView/bindings/landing_view_binding.dart';
+import '../modules/landingView/views/landing_view_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/myProfile/bindings/my_profile_binding.dart';
@@ -53,11 +55,11 @@ class AppPages {
   static const INITIAL = Routes.SPLASH;
 
   static final routes = [
-    GetPage(
-      name: _Paths.HOME,
-      page: () => const HomeView(),
-      binding: HomeBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.HOME,
+    //   page: () => const HomeView(),
+    //   binding: HomeBinding(),
+    // ),
     GetPage(
       name: _Paths.SPLASH,
       page: () => const SplashView(),
@@ -113,31 +115,31 @@ class AppPages {
       page: () => const FreelancerHomeView(),
       binding: FreelancerHomeBinding(),
     ),
-    GetPage(
-      name: _Paths.CATEGORY_RESULT,
-      page: () => const CategoryResultView(),
-      binding: CategoryResultBinding(),
-    ),
-    GetPage(
-      name: _Paths.ALL_CHATS,
-      page: () => const AllChatsView(),
-      binding: AllChatsBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.CATEGORY_RESULT,
+    //   page: () => const CategoryResultView(),
+    //   binding: CategoryResultBinding(),
+    // ),
+    // GetPage(
+    //   name: _Paths.ALL_CHATS,
+    //   page: () => const AllChatsView(),
+    //   binding: AllChatsBinding(),
+    // ),
     GetPage(
       name: _Paths.CHATTING,
       page: () => const ChattingView(),
       binding: ChattingBinding(),
     ),
-    GetPage(
-      name: _Paths.ORDERS,
-      page: () => const OrdersView(),
-      binding: OrdersBinding(),
-    ),
-    GetPage(
-      name: _Paths.PROFILE,
-      page: () => const ProfileView(),
-      binding: ProfileBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.ORDERS,
+    //   page: () => const OrdersView(),
+    //   binding: OrdersBinding(),
+    // ),
+    // GetPage(
+    //   name: _Paths.PROFILE,
+    //   page: () => const ProfileView(),
+    //   binding: ProfileBinding(),
+    // ),
     GetPage(
       name: _Paths.NOTIFICATIONS,
       page: () => const NotificationsView(),
@@ -162,6 +164,11 @@ class AppPages {
       name: _Paths.PACKAGES_META_DATA,
       page: () => const PackagesMetaDataView(),
       binding: PackagesMetaDataBinding(),
+    ),
+    GetPage(
+      name: _Paths.LANDING_VIEW,
+      page: () => const LandingViewView(),
+      binding: LandingViewBinding(),
     ),
   ];
 }

@@ -33,13 +33,7 @@ class HomeView extends GetView<HomeController> {
               gapH12,
               SearchTextField(),
               gapH12,
-              GestureDetector(
-                  onTap: () => Get.toNamed(Routes.ALL_CHATS),
-                  child: Text("Messages Screen")),
-              gapH12,
-              GestureDetector(
-                  onTap: () => Get.toNamed(Routes.PROFILE),
-                  child: Text("Profile Screen")),
+              TopRatedFreelancers(text: text),
               gapH12,
               ServicesHorizontalList(),
               gapH12,
@@ -117,8 +111,7 @@ class HomeView extends GetView<HomeController> {
                 banner1: ImageAsset.guitar1,
                 banner2: ImageAsset.guitar2,
               ),
-              gapH12,
-              TopRatedFreelancers(text: text)
+              
             ],
           ).paddingSymmetric(horizontal: Sizes.appHorizontalPadding),
         )));
